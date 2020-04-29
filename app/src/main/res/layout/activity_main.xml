@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/applayout">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz App"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applayout"
+        android:layout_marginTop="290dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/register_email"
+        android:hint="Enter Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="serif"
+        android:padding="20dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17dp"
+        android:background="@drawable/input_design"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_email"
+        android:id="@+id/register_username"
+        android:inputType="text"
+        android:hint="Enter Username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="serif"
+        android:padding="20dp"
+        android:textColor="@android:color/background_dark"
+
+        android:textSize="17dp"
+        android:background="@drawable/input_design"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/register_username"
+        android:id="@+id/register_password"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="serif"
+        android:padding="20dp"
+        android:textColor="@android:color/background_dark"
+
+        android:textSize="17dp"
+        android:background="@drawable/input_design"></EditText>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Signup"
+        android:id="@+id/signup"
+        android:textColor="@android:color/white"
+        android:fontFamily="serif"
+        android:padding="20dp"
+        android:textSize="17dp"
+        android:onClick="signup"
+        android:background="@drawable/button"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        android:text="Or, Login"
+        android:id="@+id/logintextview"
+        android:layout_below="@+id/register_password"
+        android:layout_toRightOf="@+id/signup"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/cardview_dark_background">
+
+    </TextView>
+
+</RelativeLayout>

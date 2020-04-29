@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:background="#1A1A1A">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:theme="@style/AppTheme"
+        app:popupTheme="@style/MenuStyle">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/appbarlayout"
+        android:src="@drawable/imagewelcome"
+        android:scaleType="fitXY"
+        android:layout_marginTop="1dp"
+        android:id="@+id/imageView"></ImageView>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Take Exam"
+        android:onClick="takeExam"
+        android:id="@+id/takeExambutton"
+        android:padding="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="17dp"
+        android:background="@drawable/secondbutton"
+        android:fontFamily="serif"></Button>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/applayout">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:textStyle="bold"></TextView>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:id="@+id/layout"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/applayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="No of Questions answered: "
+            android:textSize="20dp"
+            android:id="@+id/ques_answered"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:background="@drawable/answer_input"
+            android:textColor="@android:color/black"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="No of Correct Answers: "
+            android:textSize="20dp"
+            android:layout_below="@+id/ques_answered"
+            android:id="@+id/correct_ans"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:background="@drawable/answer_input"
+            android:textColor="@android:color/black"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="No of Wrong Answers: "
+            android:textSize="20dp"
+            android:layout_below="@+id/correct_ans"
+            android:id="@+id/wrong_ans"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:background="@drawable/answer_input"
+            android:textColor="@android:color/black"></TextView>
+        <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Score"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+            android:gravity="center"
+        android:layout_below="@+id/wrong_ans"
+        android:id="@+id/score"
+        android:backgroundTint="@android:color/white"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:background="@drawable/answer_input"
+        android:textColor="@android:color/black"></TextView>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:textSize="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_centerHorizontal="true"
+            android:text="5 out of 5"
+            android:id="@+id/scorecard"
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"
+            android:background="@drawable/answer_input"
+            android:backgroundTint="@android:color/white"
+            android:padding="10dp"></TextView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="Check Solutions"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:onClick="checkSolutions"
+            android:id="@+id/solutions"></Button>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:onClick="giveAgain"
+            android:layout_below="@+id/solutions"
+            android:text="Give Again"
+            android:id="@+id/giveagain"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"></Button>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
