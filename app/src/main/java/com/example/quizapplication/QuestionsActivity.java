@@ -43,7 +43,7 @@ public class QuestionsActivity extends AppCompatActivity {
     int correctans=0;
     String subject="";
     DatabaseReference ref;
-    long starttimer=10000;
+    long starttimer=120000;
     long timeLeftInMilli=starttimer;
     TextView clocktimer;
     CountDownTimer countDownTimer;
